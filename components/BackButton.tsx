@@ -12,7 +12,7 @@ const BackButton = ({
 } : BackButtonProps) => {
     const router = useRouter();
   return (
-    <TouchableOpacity onPress={() => router.back} style={[styles.button, style]}>
+    <TouchableOpacity onPress={() => router.back()} style={[styles.button, style]}>
         <CaretLeft
         size={verticalScale(iconSize)}
         color={colors.white}
